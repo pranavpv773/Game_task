@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/app/routes/routes.dart';
 import 'package:flutter_application_1/app/screen_one/view/screen_one.dart';
 import 'package:flutter_application_1/app/screen_one/view_model/one_notifier.dart';
+import 'package:flutter_application_1/app/screen_two/view_model/second_notifier.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (create) => OneNotifier(),
+        ),
+        ChangeNotifierProvider(
+          create: (create) => SecondNotifier(),
         ),
       ],
       child: MaterialApp(

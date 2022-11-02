@@ -19,7 +19,13 @@ class TextformsField extends StatelessWidget {
       child: Form(
         key: context.read<OneNotifier>().formKey,
         child: TextFormField(
-          keyboardType: TextInputType.emailAddress,
+          controller: context.read<OneNotifier>().textContrlr,
+          keyboardType: TextInputType.number,
+          validator: (value) {
+            if (value!.isEmpty) {
+              return " Please fill this field";
+            }
+          },
           decoration: InputDecoration(
             fillColor: Colors.white,
             filled: true,

@@ -1,5 +1,6 @@
 // ignore_for_file: body_might_complete_normally_nullable
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/app/app_styles/app_color.dart';
 import 'package:flutter_application_1/app/screen_one/view_model/one_notifier.dart';
 import 'package:provider/provider.dart';
 
@@ -29,21 +30,21 @@ class TextformsField extends StatelessWidget {
           decoration: InputDecoration(
             fillColor: Colors.white,
             filled: true,
-            prefixIcon: const Padding(
-              padding: EdgeInsets.symmetric(
+            prefixIcon: Padding(
+              padding: const EdgeInsets.symmetric(
                 horizontal: 20.0,
               ),
               child: Icon(
                 Icons.numbers,
-                color: Colors.amber,
+                color: AppColor.bGcolor,
               ),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(
                 10,
               ),
-              borderSide: const BorderSide(
-                color: Colors.black,
+              borderSide: BorderSide(
+                color: AppColor.kBlack,
                 width: 2.0,
               ),
             ),
@@ -51,8 +52,8 @@ class TextformsField extends StatelessWidget {
               borderRadius: BorderRadius.circular(
                 10,
               ),
-              borderSide: const BorderSide(
-                color: Colors.black,
+              borderSide: BorderSide(
+                color: AppColor.kBlack,
                 width: 2.0,
               ),
             ),
@@ -65,9 +66,9 @@ class TextformsField extends StatelessWidget {
               ),
             ),
             hintText: "Enter A number",
-            hintStyle: const TextStyle(
+            hintStyle: TextStyle(
               fontSize: 15,
-              color: Colors.black,
+              color: AppColor.kBlack,
             ),
           ),
         ),

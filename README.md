@@ -1,4 +1,4 @@
-# flutter_application_1
+# Game Task
 
 A new Flutter project.
 
